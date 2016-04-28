@@ -2,16 +2,15 @@
 
 class Comment_model extends CI_Model
 {
-
-    public function __construct() 
+    public function __construct()
     {
     	parent::__construct();
+		
+		$this->load->database();
     }
 
-    public function get_comments($id,$type) 
+    public function get_comments($id,$type)
     {
-
-    	$this->load->database();
     	if($id==0)
     	{
     		$query = $this->db->get('gestion.comment');
@@ -34,27 +33,20 @@ class Comment_model extends CI_Model
     	return $data;
     }
 
-    public function set_project_comment($descr,$author,$date,$id) 
+    public function set_project_comment($descr,$author,$date,$id)
     {
-    	$this->load->database();
-    	
-    		    	$data = array(	 
-	    			'text'=>$descr,
-	    			'date'=>$date,
-	    			'author'=>$author,
-	    			'project_id'=>$id
-	    	);
-    	
+    	$data = array(
+			'text'=>$descr,
+			'date'=>$date,
+			'author'=>$author,
+			'project_id'=>$id
+	    );
     	
     	$this->db->insert('gestion.comment', $data);
-    	
-
     }
 
-    public function set_task_comment($descr,$author,$date,$id) 
+    public function set_task_comment($descr,$author,$date,$id)
     {
-    	$this->load->database();
-    	
     	$data = array(
     			'text'=>$descr,
     			'date'=>$date,
@@ -63,15 +55,10 @@ class Comment_model extends CI_Model
     	);
     	
     	$this->db->insert('gestion.comment', $data);
-    	
-
     }
     
     public function del_comment($id)
     {
-    	$this->load->database();
-
-    	 
     	$this->db->delete('gestion.comment', array('comment_id' => $id));
     }
 

@@ -8,11 +8,11 @@ class Project_model extends CI_Model
     	$this->load->database();
     }
 
-    public function get_status()
+    public function get_statuses()
     {
     	$this->load->database();
     	 
-    	$query = $this->db->get('gestion.project_status');
+    	$query = $this->db->get('gestion.status');
     
     	$data=$query->result();
     
@@ -33,26 +33,23 @@ class Project_model extends CI_Model
     		
     		foreach ($data as $row)
     		{
-    			//avoir le status
+    			//Obtenir le status
     			$statusId=$row->status_id;
     			$query = $this->db->get_where('gestion.project_status',array('status_id'=>$statusId));
     			$status=$query->row();
     			$row->status_id=$status->status;
-    			//////////////////////////////////
     			 
-    			//avoir le client
+    			//Obtenir le client
     			$clientId=$row->client_id;
     			$query = $this->db->get_where('gestion.client',array('client_id'=>$clientId));
     			$client=$query->row();
     			$row->client_id=$client->name." ".$client->surname;
-    			//////////////
     			 
-    			//avoir auteur
-    			$userId=$row->author_user_id;
-    			$query = $this->db->get_where('gestion.user',array('user_id'=>$userId));
+    			//Obtenir l'auteur
+    			$authorId=$row->author_author_id;
+    			$query = $this->db->get_where('gestion.author',array('author_id'=>$authorId));
     			$author=$query->row();
-    			$row->author_user_id=$author->prename." ".$author->name;
-    			//////////////////	
+    			$row->author_author_id=$author->prename." ".$author->name;
     		}
     	}        	
     	return $data;
@@ -63,26 +60,25 @@ class Project_model extends CI_Model
     	if($id==0)    	
     	{
 	    	$data = array(
-	    			'title'=>$this->input->post('title'),
-	    			'description'=>$this->input->post('descr'),
-	    			'create_date'=>$this->input->post('create'),
-	    			'client_id'=>$this->input->post('client'),
-	    			'status_id'=>$this->input->post('status'),
-	    			'author_user_id'=>$this->input->post('author')
-
+				'title'=>$this->input->post('title'),
+				'description'=>$this->input->post('descr'),
+				'create_date'=>$this->input->post('create'),
+				'client_id'=>$this->input->post('client'),
+				'status_id'=>$this->input->post('status'),
+				'author_author_id'=>$this->input->post('author')
 	    	);
 	    	$this->db->insert('gestion.project', $data);
     	}
     	else 
     	{
     		$data = array(
-	    			'title'=>$this->input->post('title'),
-	    			'description'=>$this->input->post('descr'),	    			
-	    			'author_user_id'=>$this->input->post('author'),
-    				'start_date'=>$this->input->post('start'),
-    				'end_date'=>$this->input->post('end'),
-	    			'client_id'=>$this->input->post('client'),
-	    			'status_id'=>$this->input->post('status')
+				'title'=>$this->input->post('title'),
+				'description'=>$this->input->post('descr'),
+				'author_author_id'=>$this->input->post('author'),
+				'start_date'=>$this->input->post('start'),
+				'end_date'=>$this->input->post('end'),
+				'client_id'=>$this->input->post('client'),
+				'status_id'=>$this->input->post('status')
 	    	);
     		$this->db->where('project_id', $id);
     		$this->db->update('gestion.project', $data);
@@ -101,20 +97,20 @@ class Project_model extends CI_Model
     	}    	   	
     }
    /*
-    public function add_manager($user_id,$project_id) 
+    public function add_manager($author_id,$project_id) 
     {
     	
     	
     	$data=array(
-    		'user_id'=>$user_id,
+    		'author_id'=>$author_id,
     		'project_id'=>$project_id
     	);
     	$this->db->insert('gestion.project_manager', $data);
     }
 
-    public function del_manager($user_id,$project_id) 
+    public function del_manager($author_id,$project_id) 
     {
     	
-    	$this->db->delete('gestion.project_manager', array('project_id' => $project_id,'user_id'=>$user_id));
+    	$this->db->delete('gestion.project_manager', array('project_id' => $project_id,'author_id'=>$author_id));
     }*/
 }

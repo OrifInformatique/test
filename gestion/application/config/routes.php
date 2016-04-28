@@ -40,7 +40,8 @@
 
 $route['default_controller'] = "Projects/view";
 $route['404_override'] = '';
-
+$route['(.+)'] = "Projects/$1";
+$route['translate_uri_dashes'] = TRUE;
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

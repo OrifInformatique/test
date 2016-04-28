@@ -6,34 +6,39 @@ class Projects extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('Project_model');
-		$this->load->model('User_model');
+		$this->load->model('Author_model');
 		$this->load->model('Client_model');
 		$this->load->helper('url');
 		$this->load->library('form_validation');
-	} 
+	}
 	
-	public function form($id=0)
+	public function form($id = 0)
 	{
-
-		if($id==0)
+		if($id === 0)
 		{
-			
+			$header['title'] = 'Ajouter un projet';
 		}
 		else
 		{
-			$data['project'] = $this->Project_model->get_projects($id);  
+			$data['project'] = $this->Project_model->get_projects($id);
+			
+			foreach ($data['project'] as $projet)
+			{
+				$header['title'] = 'Modifier "' . $projet->name . '"';
+			}
 		}
-		 
 		
-		$data['user'] = $this->User_model->get_users();
-		 
+		$data['author'] = $this->Author_model->get_authors();
 		$data['client'] = $this->Client_model->get_clients();
+		$data['status'] = $this->Project_model->get_statuses();
 		
-		$data['status'] = $this->Project_model->get_status();
+		$header['description'] = "Page permettant de modifier ou d'ajouter un projet";
+		$header['keywords']    = 'CodeIgniter, CRUD';
+		$header['refresh']     = FALSE;
 		
-		// Render the requested view
-		$this->load->view('templates/header');
-		$this->load->view('project/form_view',$data);
+		//Render the requested view
+		$this->load->view('templates/header', $header);
+		$this->load->view('project/form_view', $data);
 		$this->load->view('templates/footer');
 	}
 	
@@ -44,16 +49,14 @@ class Projects extends CI_Controller
     	
     	if ($this->form_validation->run() === FALSE)
     	{    		
-    		   	 
     		redirect(base_url("projects/form/".$this->input->post('id')));
-    		
     	}
     	else
     	{
     		$this->Project_model->set_project();
         
      		redirect(base_url());
-    	}    	
+    	}
     }
 
     public function update() 
@@ -77,7 +80,7 @@ class Projects extends CI_Controller
     
     public function delete($id) 
     {
-    //id=$_POST['id'];
+    //$id=$_POST['id'];
     	
     	$this->Project_model->del_project($id);
     	
@@ -88,10 +91,10 @@ class Projects extends CI_Controller
     {
 
     	
-    	$user_id=0;
+    	$author_id=0;
     	$project_id=0;
     	
-    	$this->Project_model->add_manager($user_id,$project_id);
+    	$this->Project_model->add_manager($author_id,$project_id);
     	
     	redirect(base_url("Project/Detail/".$project_id));
     }
@@ -99,29 +102,33 @@ class Projects extends CI_Controller
     public function delmanager()
     {
     	
-    	$user_id=0;
+    	$author_id=0;
         $project_id=0;
         
-    	$this->Project_model->del_manager($user_id,$project_id);
+    	$this->Project_model->del_manager($author_id,$project_id);
     	 
     	redirect(base_url("Project/Detail/".$project_id));
     }*/
     
     public function view() 
     {
-    	
     	$data['project'] = $this->Project_model->get_projects();
     	
-    	 $this->load->view('templates/header');
+		$header['description'] = 'Liste de projets';
+		$header['title']       = 'Liste des projets';
+		$header['keywords']    = 'CodeIgniter, CRUD';
+		$header['refresh']     = FALSE;
+		
+    	$this->load->view('templates/header', $header);
     	$this->load->view('project/list_view', $data);
-    	 $this->load->view('templates/footer');
+    	$this->load->view('templates/footer');
     }
-    
+    /*
     public function detail($project_id) 
     {
     	$this->load->model('Project_model');
     	$this->load->model('Task_model');
-    	$this->load->model('User_model');
+    	$this->load->model('author_model');
     	$this->load->model('Client_model');
     	$this->load->model('Comment_model');
     	
@@ -131,7 +138,7 @@ class Projects extends CI_Controller
     	
     	$data['task'] = $this->Task_model->get_tasks($project_id,$type);
     	
-    	$data['user'] = $this->User_model->get_users();
+    	$data['author'] = $this->author_model->get_authors();
     	
     	$data['client'] = $this->Client_model->get_clients();
     	
@@ -140,5 +147,5 @@ class Projects extends CI_Controller
     	$this->load->view('templates/header');
     	$this->load->view('project/detail_view', $data);  
     	$this->load->view('templates/footer');
-    }
+    }*/
 }
