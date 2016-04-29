@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+table
+{
+	border:2px black solid;
+}
+
+title
+{
+	color:red;
+}
+
+td
+{
+	border:2px black solid;
+	margin-left: 10px;
+}
