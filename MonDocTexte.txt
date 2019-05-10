@@ -1,1 +1,1 @@
-Ce doc est là juste pour un test
+Ce doc est la pour tester les differentes fonctionnalites possible avec GitHub
