@@ -1,5 +1,6 @@
 # test
-Test de GitHub
+Utilisé pour permettre aux apprentis de tester les fonctions de GitHub.
+Utilisé également pour créer des issues lors des procédures de tests unitaires automatiques de nos applications (PHPUnit)
 
 ## Contenus
 Contient un CRUD (non fonctionnel), "gestion", avec les tables :
