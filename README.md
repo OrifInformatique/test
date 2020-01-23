@@ -1,5 +1,5 @@
 # test
-Utilisé pour permettre aux apprentis de tester les fonctions de GitHub.
+Utilisé pour permettre aux apprentis de tester les fonctions de GitHub.<br>
 Utilisé également pour créer des issues lors des procédures de tests unitaires automatiques de nos applications (PHPUnit)
 
 ## Contenus
