@@ -1,4 +1,4 @@
-# test
+# Test
 Ce repository est utilisé pour permettre aux apprentis de l'Orif de tester les fonctions de GitHub.<br>
 Il est également utilisé pour créer des issues lors des procédures de tests unitaires automatiques de nos applications (PHPUnit)
 
