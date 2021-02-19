@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-19T13:36:58.405Z" agent="5.0 (Windows)" etag="HNI-ubKvI1V5Q866Eoh3" version="14.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-19T13:40:08.463Z" agent="5.0 (Windows)" etag="abSmHb009INS_xaWQi9b" version="14.4.2" type="github">
   <diagram id="53IQXVl9icCSp_Kw3Ib1" name="Page-1">
     <mxGraphModel dx="1422" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -77,8 +77,8 @@
         <mxCell id="uWUnNED6HEl2aK5fdaIb-95" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=4;shape=mxgraph.flowchart.on-page_reference;plain-purple;gradientColor=none;strokeColor=#000000;fillColor=#D5E8D4;" parent="1" vertex="1">
           <mxGeometry x="696.75" y="361" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uWUnNED6HEl2aK5fdaIb-76" value="develop" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=1;fontFamily=Courier New;" parent="1" vertex="1">
-          <mxGeometry x="85.75" y="364" width="91" height="20" as="geometry" />
+        <mxCell id="uWUnNED6HEl2aK5fdaIb-76" value="nouvelle-fonction" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=1;fontFamily=Courier New;" parent="1" vertex="1">
+          <mxGeometry x="85.75" y="364" width="194.25" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uWUnNED6HEl2aK5fdaIb-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeWidth=4;" parent="1" source="uWUnNED6HEl2aK5fdaIb-82" target="uWUnNED6HEl2aK5fdaIb-84" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -92,14 +92,14 @@
         <mxCell id="uWUnNED6HEl2aK5fdaIb-84" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=4;shape=mxgraph.flowchart.on-page_reference;plain-purple;gradientColor=none;strokeColor=#000000;fillColor=#D5E8D4;" parent="1" vertex="1">
           <mxGeometry x="611.75" y="440" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uWUnNED6HEl2aK5fdaIb-86" value="JIRA-35--example feature" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=1;fontFamily=Courier New;" parent="1" vertex="1">
+        <mxCell id="uWUnNED6HEl2aK5fdaIb-86" value="fix-erreur-affichage" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=1;fontFamily=Courier New;" parent="1" vertex="1">
           <mxGeometry x="84.5" y="445" width="240" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="uWUnNED6HEl2aK5fdaIb-87" value="The development or sprint branch" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=0;fontColor=#009900;" parent="1" vertex="1">
-          <mxGeometry x="85.75" y="384" width="240" height="20" as="geometry" />
+        <mxCell id="uWUnNED6HEl2aK5fdaIb-87" value="Développement d&#39;une nouvelle fonction" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=0;fontColor=#009900;" parent="1" vertex="1">
+          <mxGeometry x="85.75" y="384" width="264.25" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="uWUnNED6HEl2aK5fdaIb-88" value="Your feature branch" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=0;fontColor=#009900;" parent="1" vertex="1">
-          <mxGeometry x="85.75" y="465" width="240" height="20" as="geometry" />
+        <mxCell id="uWUnNED6HEl2aK5fdaIb-88" value="&lt;div&gt;Travail sur la correction d&#39;une erreur&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=0;fontColor=#009900;" parent="1" vertex="1">
+          <mxGeometry x="85.75" y="465" width="274.25" height="20" as="geometry" />
         </mxCell>
         <mxCell id="uWUnNED6HEl2aK5fdaIb-89" value="Version en cours de développement" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;fontStyle=0;fontColor=#009900;" parent="1" vertex="1">
           <mxGeometry x="86.75" y="306" width="240" height="20" as="geometry" />
@@ -115,7 +115,7 @@
         </mxCell>
         <mxCell id="uWUnNED6HEl2aK5fdaIb-92" value="" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Courier New;fontColor=#009900;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="186.75" y="374" as="sourcePoint" />
+            <mxPoint x="280" y="374" as="sourcePoint" />
             <mxPoint x="376.75" y="374" as="targetPoint" />
           </mxGeometry>
         </mxCell>
