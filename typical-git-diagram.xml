@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-19T13:57:43.226Z" agent="5.0 (Windows)" etag="jpfst1ZqFhdk9qjsUGj8" version="14.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-19T14:03:33.256Z" agent="5.0 (Windows)" etag="kHGz3JPgTZlWt5ogeIGs" version="14.4.2" type="github">
   <diagram id="53IQXVl9icCSp_Kw3Ib1" name="Page-1">
     <mxGraphModel dx="1422" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -150,7 +150,7 @@
         <mxCell id="fSnZ5vnYTslC5NarKmr_-11" value="&lt;div&gt;Structure type des branches Git pour une application web&lt;/div&gt;&lt;div&gt;de la section informatique&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=33;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="80" y="20" width="1000" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="9hBKPDzoitwpIBdzFDQ7-15" value="Pull request de la release dans la branche master, à valider par un administrateur." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=12;fontStyle=0;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="9hBKPDzoitwpIBdzFDQ7-15" value="Pull request de la release dans la branche master, à valider par un administrateur" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=12;fontStyle=0;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="940" y="266.5" width="138.88" height="64.5" as="geometry" />
         </mxCell>
         <mxCell id="Whbx7Tw2O1C0oJwCBe3z-2" value="" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Courier New;fontColor=#009900;" edge="1" parent="1">
@@ -159,7 +159,7 @@
             <mxPoint x="970" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Whbx7Tw2O1C0oJwCBe3z-7" value="Pull request de la branche &quot;fix&quot; dans la release, à valider par un administrateur." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=12;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="Whbx7Tw2O1C0oJwCBe3z-7" value="Pull request de la branche &quot;fix&quot; dans la release, à valider par un administrateur" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=12;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="411" y="311" width="138.88" height="64.5" as="geometry" />
         </mxCell>
         <mxCell id="Whbx7Tw2O1C0oJwCBe3z-8" value="" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Courier New;fontColor=#009900;" edge="1" parent="1">
@@ -179,6 +179,42 @@
         </mxCell>
         <mxCell id="Whbx7Tw2O1C0oJwCBe3z-14" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=4;shape=mxgraph.flowchart.on-page_reference;fillColor=#e1d5e7;" vertex="1" parent="1">
           <mxGeometry x="770" y="526" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Whbx7Tw2O1C0oJwCBe3z-19" value="Commits, étapes de développement des branches" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=12;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="460" y="465" width="180" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="Whbx7Tw2O1C0oJwCBe3z-20" value="" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Courier New;fontColor=#009900;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Whbx7Tw2O1C0oJwCBe3z-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="499.88" y="542" as="sourcePoint" />
+            <mxPoint x="549.88" y="526" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Whbx7Tw2O1C0oJwCBe3z-21" value="" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Courier New;fontColor=#009900;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Whbx7Tw2O1C0oJwCBe3z-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="536" as="sourcePoint" />
+            <mxPoint x="440" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Whbx7Tw2O1C0oJwCBe3z-22" value="" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Courier New;fontColor=#009900;exitX=0.194;exitY=0.054;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Whbx7Tw2O1C0oJwCBe3z-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="460" as="sourcePoint" />
+            <mxPoint x="510" y="449" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Whbx7Tw2O1C0oJwCBe3z-23" value="" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Courier New;fontColor=#009900;entryX=0.767;entryY=1.133;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.044;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Whbx7Tw2O1C0oJwCBe3z-19" target="uWUnNED6HEl2aK5fdaIb-69">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="465" as="sourcePoint" />
+            <mxPoint x="460" y="449" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Whbx7Tw2O1C0oJwCBe3z-24" value="Pull request de la nouvelle fonction dans la release, à valider par un administrateur" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=12;fontStyle=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="860" y="378.5" width="138.88" height="64.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Whbx7Tw2O1C0oJwCBe3z-25" value="" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Courier New;fontColor=#009900;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="380" as="sourcePoint" />
+            <mxPoint x="860" y="311" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
