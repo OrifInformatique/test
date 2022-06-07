@@ -1,1 +1,1 @@
-Ce document est la pour tester les differentes fonctionnalites possible avec GitHub
+Ce document est la pour tester les differentes fonctionnalites possibles avec GitHub
