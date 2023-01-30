@@ -3,7 +3,7 @@
 # Lignes de code de test
 
 a = 7
-b = 9
+b = 15
 
 somme = a + b
 
