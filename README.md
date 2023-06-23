@@ -10,6 +10,7 @@ Pour ajouter votre nom dans la liste des personnes qui ont réalisé cet exercic
 - Faites un pull request pour demander de fusionner votre branche dans la branche master
 
 ## Liste des personnes qui ont réalisé cet exercice
+ViLu (22.06.2023)<br>
 PeTh (12.03.2023)<br>
 CaLa (09.03.2023)<br>
 BlAl (07.03.2023)<br>
