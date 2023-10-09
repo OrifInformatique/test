@@ -2,7 +2,7 @@
 
 # Lignes de code de test
 
-a = 77
+a = 111
 b = 99
 
 c = a - 22 #55
@@ -23,7 +23,7 @@ Affichage du calcul effectué :
     {somme}
     ---
 
-Le résulat attendu :
+Le résultat attendu :
 
     ---
     {control}
