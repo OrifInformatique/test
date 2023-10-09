@@ -3,7 +3,7 @@
 # Lignes de code de test
 
 a = 77
-b = 100
+b = 99
 
 c = a - 22 #55
 d = c - 22 #33
