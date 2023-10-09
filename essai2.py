@@ -2,8 +2,8 @@
 
 # Lignes de code de test
 
-a = 111
-b = 99
+a = 77
+b = 100
 
 c = a - 22 #55
 d = c - 22 #33
