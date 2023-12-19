@@ -1,3 +1,7 @@
+*{
+    background-color: darkgray;
+}
+
 h1 {
     color: red;
     position: relative;
@@ -7,9 +11,9 @@ h1 {
 }
   
 @keyframes anim {
-    0%   {color:rgba(0, 255, 21, 0.541); left:0px; top:0px;}
+    0%   {color:magenta; left:0px; top:0px;}
     25%  {color:yellow; left:200px; top:0px;}
-    50%  {color:blue; left:200px; top:200px;}
-    75%  {color:green; left:0px; top:200px;}
-    100% {color:rgb(0, 0, 0); left:0px; top:0px;}
+    50%  {color:cyan; left:200px; top:200px;}
+    75%  {color:chartreuse; left:0px; top:200px;}
+    100% {color:magenta; left:0px; top:0px;}
 }
