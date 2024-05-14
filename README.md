@@ -10,6 +10,7 @@ Pour ajouter votre nom dans la liste des personnes qui ont réalisé cet exercic
 - Faites un pull request pour demander de fusionner votre branche dans la branche master
 
 ## Liste des personnes qui ont réalisé cet exercice
+QuEN (14.05.2024)<br>
 KoYo (11.03.2024)<br>
 JoKa (16.01.2024)<br>
 KoGa (04.01.2024)<br>
