@@ -10,10 +10,29 @@ h1 {
     animation-iteration-count: infinite;
 }
   
-@keyframes anim {
-    0%   {color:magenta; left:0px; top:0px;}
-    25%  {color:yellow; left:200px; top:0px;}
-    50%  {color:cyan; left:200px; top:200px;}
-    75%  {color:chartreuse; left:0px; top:200px;}
-    100% {color:magenta; left:0px; top:0px;}
+@keyframes changeColor {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: purple; }
+}
+
+#changing-text.animate {
+    animation: changeColor 2.5s infinite;
+}
+
+#changing-text:not(.animate) {
+    color: white; /* Removed unnecessary forward slash */
+    font-size: 24px;
+    text-align: left;
+    margin-top: 0px;
+}
+
+#bonhomme {
+    position: absolute;
+    top: 150%; /* Removed '+' from '+150%' */
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
 }
