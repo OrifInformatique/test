@@ -1,13 +1,13 @@
-*{
-    background-color: darkgray;
+body {
+    background-color: blue;
+    position: relative;
 }
 
-h1 {
-    color: red;
-    position: relative;
-    animation-name: anim;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+#changing-text {
+    font-size: 45px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
 }
   
 @keyframes changeColor {
