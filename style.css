@@ -22,8 +22,8 @@ body {
     animation: changeColor 2.5s infinite;
 }
 
-#changing-text:not(.animate) {
-    color: white; /* Removed unnecessary forward slash */
+#text {
+    color: white;
     font-size: 24px;
     text-align: left;
     margin-top: 0px;
