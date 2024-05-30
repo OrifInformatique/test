@@ -31,8 +31,14 @@ body {
 
 #bonhomme {
     position: absolute;
-    top: 150%; /* Removed '+' from '+150%' */
+    top: 440px; /* changed 150% to flat pixels value */
     left: 10px;
-    transform: translateY(-50%);
+    color: white;
+}
+
+#obstacle {
+    position: absolute;
+    top: 450px; /* changed 150% to flat pixels value */
+    left: 10px;
     color: white;
 }
