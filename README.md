@@ -10,6 +10,7 @@ Pour ajouter votre nom dans la liste des personnes qui ont réalisé cet exercic
 - Faites un pull request pour demander de fusionner votre branche dans la branche master
 
 ## Liste des personnes qui ont réalisé cet exercice
+AlKe (03.09.2024)<br>
 ScTr (24.05.2024)<br>
 QuEn (15.05.2024)<br>
 KoYo (11.03.2024)<br>
