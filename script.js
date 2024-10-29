@@ -22,7 +22,7 @@ function moveElements() {
     obstacleElement.style.left = obstacleXPos + "px";
 
     obstacle2XPos -= 10; // Déplace l'obstacle de 10 pixels à chaque fois
-    obstacleElement.style.left = obstacleXPos + "px";
+    obstacle2Element.style.left = obstacle2XPos + "px";
 
     // Réinitialise la position lorsque le bonhomme atteint la fin de la page
     if (bonhommeXPos > window.innerWidth) {
