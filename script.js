@@ -1,5 +1,5 @@
 // Déplacement du bonhomme ASCII
-let bonhommeXPos = -100; // Position initiale à gauche de la fenêtre
+let bonhommeXPos = 100; // Position initiale à gauche de la fenêtre
 const bonhommeElement = document.getElementById("bonhomme");
 
 let obstacleXPos = 1800; // Position initiale à droite de la fenêtre
@@ -12,33 +12,27 @@ let bonhommeYPos = 440; // Position initiale sur l'axe vertical
 
 let obstacleYPos = 450; // Position initiale sur l'axe vertical
 
-let obstacle2YPos = 520; // Position initiale sur l'axe vertical
+let obstacle2YPos = 400; // Position initiale sur l'axe vertical
 
 function moveElements() {
-    bonhommeXPos += 10; // Déplace le bonhomme de 10 pixels à chaque fois
-    bonhommeElement.style.left = bonhommeXPos + "px";
-
     obstacleXPos -= 10; // Déplace l'obstacle de 10 pixels à chaque fois
     obstacleElement.style.left = obstacleXPos + "px";
 
-    obstacle2XPos -= 10; // Déplace l'obstacle de 10 pixels à chaque fois
+    obstacle2XPos -= 20; // Déplace l'obstacle de 10 pixels à chaque fois
     obstacle2Element.style.left = obstacle2XPos + "px";
 
-    // Réinitialise la position lorsque le bonhomme atteint la fin de la page
-    if (bonhommeXPos > window.innerWidth) {
-        bonhommeXPos = -100;
-    }
     // Réinitialise la position lorsque l'obstacle atteint la fin de la page
     if (obstacleXPos < -100) {
         obstacleXPos = 1800;
+        bonhommeElement.style.color = "White";
     }
     // Réinitialise la position lorsque l'obstacle2 atteint la fin de la page
-    if (obstacle2XPos < -100) {
+    if (obstacle2XPos < -200) {
         obstacle2XPos = 1500;
     }
     // Calcule la différence de distance sur l'axe vertical et horizontal pour savoir si le bonhomme est trop proche de l'obstacle et le faire disparaître
     if(Math.abs(obstacleXPos - bonhommeXPos) - (bonhommeYPos - obstacleYPos) < 40){
-      bonhommeElement.style.color = "Blue";
+      bonhommeElement.style.color = "Red";
     }
     // Calcule la différence de distance sur l'axe vertical et horizontal pour savoir si le bonhomme est trop proche de l'obstacle2 et le faire disparaître
     if(Math.abs(obstacle2XPos - bonhommeXPos) - (bonhommeYPos - obstacle2YPos) < 40){

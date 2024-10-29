@@ -32,7 +32,7 @@ body {
 #bonhomme {
     position: absolute;
     top: 440px; /* changed 150% to flat pixels value */
-    left: 10px;
+    left: 100px;
     color: white;
 }
 
@@ -42,3 +42,34 @@ body {
     left: 10px;
     color: white;
 }
+#obstacle2 {
+    position: absolute;
+    top: 400px; /* changed 150% to flat pixels value */
+    left: 10px;
+    color: white;
+}
+#decor {
+    position: absolute;
+    top: 300px; /* changed 150% to flat pixels value */
+    left: 10px;
+    color: yellowgreen;
+}
+#arbre1 {
+    position: absolute;
+    top: 390px; /* changed 150% to flat pixels value */
+    left: 500px;
+    color: green;
+}
+#arbre2 {
+    position: absolute;
+    top: 350px; /* changed 150% to flat pixels value */
+    left: 300px;
+    color: greenyellow;
+}
+#arbre3 {
+    position: absolute;
+    top: 420px; /* changed 150% to flat pixels value */
+    left: 1200px;
+    color: brown;
+}
+
