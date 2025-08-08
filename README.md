@@ -11,6 +11,7 @@ Pour ajouter votre nom dans la liste des personnes qui ont réalisé cet exercic
 
 ## Liste des personnes qui ont réalisé cet exercice
 HeDa (08.08.2025)<br>
+CaDa (08.08.2025)<br>
 DoRy (20.03.2025)<br>
 SeMa (29.10.2024)<br>
 AlKe (03.09.2024)<br>
