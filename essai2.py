@@ -1,33 +1,45 @@
-# Ceci est un essai pour comprendre comment Github fonctionne
-
-# Lignes de code de test
-
-a = 77
-b = 99
-
-c = a - 22  #55
-d = c - 22  #33
-e = d - 22  #11
-f = e - 22  #-11
-g = int(d/f)#-3
-h = int(c/f)#-5
-
-somme = a + b + c + d + e + f + g + h
-
-control = 77+99+55+33+11-11-8
-
-print(f"""
-Affichage du calcul effectué :
-
-    {a} + {b} + {c} + {d} + {e} + {f} + {g} + {h}=
+#rectangle 2D ascii qui se tourne
+import os
+import math
+import time
+block = "@"
+nothing = " "
+WIDTH = 50
+HEIGHT = 50
+buffer = [[nothing for x in range(WIDTH)]for y in range(HEIGHT)]
+rectAngle = 0
+def drawRect(x,XscaleHalf,y,Yscale,angle,buffer):
+    Xscale = XscaleHalf*2
+    rad = angle * math.pi/180
+    centerX = x+Xscale/2
+    centerY = y+Yscale/2
     
-    ---
-    {somme}
-    ---
-
-Le résulat attendu :
-
-    ---
-    {control}
-    ---
-""")
+    for YI in range(y,y+Yscale):
+        for XI in range(x,x+Xscale):
+            diffX = XI - centerX
+            diffY = YI - centerY
+            rotX = diffX * math.cos(rad) + diffY * math.sin(rad)+centerX
+            rotY = diffX * math.sin(rad) - diffY * math.cos(rad)+centerY
+            adjustX = int(rotX + centerX)
+            adjustY = int(rotY + centerY)
+            buffer[adjustY][adjustX] = block
+            
+while(True):
+    rectAngle += 5
+    
+    #clean
+    os.system("cls")
+    
+    #add empty space
+    for y in range(HEIGHT):
+        for x in range(WIDTH):
+            buffer[y][x] = nothing
+        
+    #draw spinning rectangle
+    drawRect(5,10,5,10,rectAngle,buffer)
+    
+    #draw results
+    for row in buffer:
+        print("".join(row))
+    time.sleep(0.05)
+    
